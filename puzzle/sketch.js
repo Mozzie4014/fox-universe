@@ -7,9 +7,13 @@ let activeID = false;
 let renderScale;
 let puzzleWidth;
 let puzzleHeight;
+const imageIDwide = [11]
+const imageIDtall = [1,2,4,5,6,7]
 
 async function setup() {
-  img = await loadImage(`https://randomfox.ca/images/11.jpg`);
+  let id = 8
+   id = floor(random(1, 124));
+  img = await loadImage(`https://randomfox.ca/images/${id}.jpg`);
   createCanvas(windowWidth, windowHeight);
 
   parts = split_image(img, 100);
