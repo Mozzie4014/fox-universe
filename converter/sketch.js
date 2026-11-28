@@ -14,11 +14,12 @@ async function setup() {
 prepare_images()
   itterate()
   
-//frameRate(1)
+frameRate(1)
 }
 
 function draw() {
   background(fox);
+  run(5)
   render() 
   stroke(255)
   textSize(30)
