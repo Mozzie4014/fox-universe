@@ -19,11 +19,11 @@ frameRate(1)
 
 function draw() {
   background(fox);
-  run(5)
+  run(3)
   render() 
   stroke(255)
   textSize(30)
-  text(speed, 20, 50)
+  text("1543", 20, 50)
 }
 
 async function mousePressed() {
